@@ -32,8 +32,7 @@ jobs:
       - name: Deploy Resource Group rg-githubactions  with Azure ARM
         uses: Azure/arm-deploy@v1
         with:
-          scoupe: subscription 
-          resourceGroupName: rg-githubactions
+          scope: subscription   
           subscriptionId: 9d299f43-70f9-4a56-885e-11dcee96dca6
           region: Australia East
           template: ./arm-templates/resourcegroup.json
