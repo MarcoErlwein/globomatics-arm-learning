@@ -1,0 +1,12 @@
+#para hacer commit en Github
+
+git add .
+git commit -m "add resource group and action"
+git push
+
+#para clonar un repositorio
+git clone https://github.com/MarcoErlwein/globomatics-arm-learning.git
+
+#para establecer el usuario de github
+git config --global user.name "MarcoErlwein" 
+git config --global user.mail merlwein@cognosys.com.bo   
