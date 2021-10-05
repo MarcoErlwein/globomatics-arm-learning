@@ -54,7 +54,7 @@ jobs:
           parameters: 
             ./arm-templates/storageaccount.parameters.json
             storageAccountName=globostg002
-            location="${{env.location}}"
+            location="Australia East"
           deploymentMode: incremental
 
       - name: Deploy Virtual Machine 
