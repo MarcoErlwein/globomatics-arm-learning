@@ -38,17 +38,17 @@ jobs:
         uses: Azure/arm-deploy@v1
         with:
           scope: subscription   
-          subscriptionId: ${{ env.subscriptionId}}
+          subscriptionId: ${{env.subscriptionId}}
           region: "${{env.location}}"
           template: ./arm-templates/resourcegroup.json
-          deploymentName: ${{ env.resource_group_name }}
+          deploymentName: ${{env.resource_group_name}}
      
       - name: Deploy Storage Account 
         uses: Azure/arm-deploy@v1
         id: storageAccountDeploy
         with:
           scope: resourcegroup   
-          resourceGroupName: ${{ env.resource_group_name }}
+          resourceGroupName: ${{env.resource_group_name}}
           subscriptionId: ${{env.subscriptionId}}
           template: ./arm-templates/storageaccount.json          
           parameters: 
