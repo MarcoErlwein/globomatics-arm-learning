@@ -10,3 +10,6 @@ git clone https://github.com/MarcoErlwein/globomatics-arm-learning.git
 #para establecer el usuario de github
 git config --global user.name "MarcoErlwein" 
 git config --global user.mail merlwein@cognosys.com.bo   
+
+
+token de github = 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
